@@ -6,3 +6,7 @@ This is an old tech demo I wrote in 2008 and used as an example for a talk I gav
 
 *__Warning__! Here be dragons, etc. This probably wont work at all, and definitely isn't very good as a Xul example. It was fun to create at the time though.*
 
+Basics:
+* remote Xul interface
+* PHP back-end that proxies to MySQL
+
