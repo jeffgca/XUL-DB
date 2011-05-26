@@ -1,0 +1,8 @@
+== devnotes: xuldb ==
+
+how to make this more 'flexible' in terms of swapping out backends...
+
+ - two pure xul files ( login and the main window ) as includes?? / templates
+ - associated JS libs
+ - js config file with rest endpoint
+ - simple rest api to implement

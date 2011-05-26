@@ -1,0 +1,70 @@
+<window title="SQL Manager" width="800" height="600" onload="init();"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="xuldb.js"/>
+    <script type="application/x-javascript" src="utilities.js"/>
+    <script type="application/x-javascript" src="sqlutilities.js"/>
+    <script type="application/x-javascript" src="httprequest.js"/>
+
+    <hbox height="30">
+        <vbox flex="1">
+            <toolbar>
+                <toolbarbutton id="destroy" label="Logout" oncommand="logOut();"/>
+            </toolbar>
+        </vbox>
+    </hbox>
+
+    <hbox flex="1">
+        <vbox width="200">
+            <!--<toolbar>
+                <toolbarbutton id="tb01" label="New"  />
+                <toolbarseparator/>
+                <toolbarbutton id="tb02" label="Edit" />
+                <toolbarseparator/>
+                <toolbarbutton id="tb03" label="View" oncommand="tableBrowse();"/>
+            </toolbar>-->
+
+            <tree id="treeView" flex="1" hidecolumnpicker="true" onselect="tableFields();" ondblclick="tableFields();">
+                <treecols>
+                    <treecol id="treeDatabases" flex="1" label="Databases" primary="true" />
+                </treecols>
+                <treechildren id="dbChildren"/>
+            </tree>
+        </vbox>
+
+        <vbox flex="1">
+            <hbox height="4"></hbox>
+            <hbox height="20">
+                <label id="labelTitle" style="font-family:verdana; font-size:1em; font-weight:bold;">Table: </label>
+            </hbox>
+            <vbox flex="2" style="overflow: auto">
+                <tree id="treeStructure" flex="1" hidecolumnpicker="true" seltype="single" >
+                    <treecols>
+                        <treecol id="colName" flex="4" label="Field Name" />
+                        <treecol id="colType" flex="2" label="Type" />
+                        <treecol id="colNull" flex="1" label="Null" />
+                        <treecol id="colKeys" flex="1" label="Keys" />
+                        <treecol id="colDefs" flex="2" label="Default" />
+                        <treecol id="colMore" flex="2" label="Extra" />
+                    </treecols>
+                    <treechildren id="treeFields">
+                    </treechildren>
+                </tree>
+            </vbox>
+            <splitter><grippy/></splitter>
+            <vbox flex="1" style="overflow: auto">
+                <!--<toolbar>
+                    <toolbarbutton id="tb04" label="New"  oncommand="clearEditor();"/>
+                    <toolbarseparator/>
+                    <toolbarbutton id="tb05" label="Open" />
+                    <toolbarseparator/>
+                    <toolbarbutton id="tb06" label="Save" />
+                    <toolbarseparator/>
+                    <toolbarbutton id="tb07" label="Run"  oncommand="execute();"/>
+                </toolbar>-->
+                <textbox id="sqleditor" multiline="true" flex="1" value="Enter Query Here" style="font-family:courier new;font-size:1.2em;"/>
+            </vbox>
+        </vbox>
+    </hbox>
+</window>

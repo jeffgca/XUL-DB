@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="10A0A6C78EEL54a778660x2af2" name="xuldb" kpf_version="2">
+<preference-set id="">
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;*%*;*.bmp</string>
+  <string id="import_dirname">/home/jeffg/code/www/xuldb</string>
+</preference-set>
+<file url="xuldb.rest.php" id="10A0A6CE8F6L10933ecd0x2af2" name="xuldb.rest.php">
+</file>
+<file url="utilities.js" id="10A0A6CE8F6L606965dd0x2af2" name="utilities.js">
+</file>
+<file url="sqlutilities.js" id="10A0A6CE8F7L433ef8e90x2af2" name="sqlutilities.js">
+</file>
+<file url="httprequest.js" id="10A0A6CE8F7L3dfc3c670x2af2" name="httprequest.js">
+</file>
+<file url="index.php" id="10A0A6CE8F7L4c2a59d60x2af2" name="index.php">
+</file>
+<file url="xuldb.css" id="10A0A6CE8F7L189ee4ef0x2af2" name="xuldb.css">
+</file>
+<file url="xuldb.inc" id="10A0A6CE8F7L55c0d8f30x2af2" name="xuldb.inc">
+</file>
+<ProjectRef url="xuldb.kpf" id="10A0A6CE8F7La9425650x2af2" name="xuldb.kpf">
+</ProjectRef>
+<file url="app.php" id="10A0A6CE8F7L44ee9ce50x2af2" name="app.php">
+</file>
+<file url="xuldb.js" id="10A0A6CE8F7L7e2720680x2af2" name="xuldb.js">
+</file>
+<folder url="graphics" id="10A0A6CE8FEL6b00075c0x2af2" name="graphics">
+<file url="graphics/toolbars.gif" id="10A0A6CE8F7L65df9e430x2af2" name="toolbars.gif">
+</file>
+</folder>
+<folder id="10A0A7F98CFL4299c79a0x2af2" name="urlz">
+<URL keyboard_shortcut="" id="10A0A701436L74773f770x2af2" name="main">
+http://apple/xuldb/app.php</URL>
+<URL keyboard_shortcut="" id="10A0A7FE3FAL7d56c1600x2af2" name="rest-dbs">
+http://apple/xuldb/xuldb.rest.php?op=databases</URL>
+<URL keyboard_shortcut="" id="10A0B2E3925L6b2404b80x2af2" name="rest-login">
+http://apple/xuldb/xuldb.rest.php?op=login&amp;uname=root&amp;passwd=digw33d&amp;host=robot&amp;db=drupal</URL>
+</folder>
+<file url="treehack.xul" id="10A52C716C7L6cbf0b3e0x174b" name="treehack.xul">
+</file>
+<file url="hack.php" id="10A52C716C7L420c0ecf0x174b" name="hack.php">
+</file>
+<file url="login.xul" id="10A52C716C7L35bf8da90x174b" name="login.xul">
+</file>
+<file url="mainwin.xul" id="10A52C716C7L5310ded00x174b" name="mainwin.xul">
+</file>
+<file url="devnotes.txt" id="10A52C716C8L65b888840x174b" name="devnotes.txt">
+</file>
+</project>
